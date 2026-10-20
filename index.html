@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marlee's Information Technology student portfolio">
+  <title>Marlee | IT Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">Marlee<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO AND WELCOME</p>
+          <h1>Hi, I'm <span>Marlee Manila</span></h1>
+          <h2>BSIT Student · Future Web Developer</h2>
+          <p class="lead">I enjoy learning about technology, exploring coding, and creating websites. Welcome to my portfolio where I share a little about myself and the projects I've worked on.</p>
+          <div class="actions"><a class="btn primary" href="#projects">Explore My Projects ↘</a><button class="btn outline" id="helloBtn">Say Hello 👋</button></div>
+          <p id="welcomeMessage" class="welcome-message" aria-live="polite"></p>
+          <p class="datetime"><span>Local date &amp; time</span><strong id="dateTime">Loading…</strong></p>
+        </div>
+        <div class="portrait-frame"><img src="images/profile.jpg" alt="Marlee's profile portrait" class="portrait"><span class="portrait-tag">IT STUDENT</span></div>
+      </div>
+      <a href="#about" class="scroll-cue">SCROLL TO EXPLORE ↓</a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Get to know <span>me</span></h2><p>My background, interests, and goals.</p></div>
+        <div class="about-layout">
+          <div class="about-photo"><img src="images/profile.jpg" alt="Marlee" loading="lazy"></div>
+          <div class="about-content">
+            <h3>I'm Marlee, an IT student.</h3>
+            <p>I'm a college student taking Bachelor of Science in Information Technology (BSIT). I enjoy listening to music, playing online games like Valorant and CrossFire, spending time with my cat, and learning new things.</p>
+            <p>I'm interested in using computers and exploring coding. My goal is to finish my studies, improve my skills, and help my family while building a better future.</p>
+            <div class="info-list"><p><b>Name</b><span>Marlee Manila</span></p><p><b>Course</b><span>BS Information Technology</span></p><p><b>Interests</b><span>Coding, music, online games, technology</span></p></div>
+            <button class="btn primary" id="readMoreBtn" aria-expanded="false">Read More +</button>
+            <div class="extra-info hidden" id="extraInfo"><p>I believe that practice and patience help me improve. Every school activity is an opportunity to learn something new and become more confident in web development.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="container"><div class="section-heading"><p class="eyebrow">WHAT I'M LEARNING</p><h2>My <span>Skills</span></h2><p>Technical and personal skills I continue to develop.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-symbol">&lt;/&gt;</div><h3>HTML</h3><p>Building the structure of web pages.</p><div class="skill-line"><span style="width:75%"></span></div></article>
+          <article class="skill-card"><div class="skill-symbol">✦</div><h3>CSS</h3><p>Styling websites with colors, spacing, and layouts.</p><div class="skill-line"><span style="width:65%"></span></div></article>
+          <article class="skill-card"><div class="skill-symbol">JS</div><h3>JavaScript</h3><p>Adding interaction and useful features to websites.</p><div class="skill-line"><span style="width:45%"></span></div></article>
+          <article class="skill-card"><div class="skill-symbol">♡</div><h3>Personal Skills</h3><p>Patience, creativity, teamwork, and willingness to learn.</p><div class="skill-line"><span style="width:80%"></span></div></article>
+        </div><p class="note">Skill bars are examples. You can adjust them to reflect your current skill level.</p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container"><div class="section-heading"><p class="eyebrow">MY SCHOOL WORK</p><h2>Featured <span>Projects</span></h2><p>A collection of activities and practice projects I've worked on.</p></div>
+        <div class="projects-grid">
+          <article class="project-card"><a class="project-image" href="images/project-anime.jpg" target="_blank" aria-label="View anime project image"><img src="images/project-anime.jpg" alt="Anime website repository screenshot" loading="lazy"></a><div class="project-body"><span class="project-type">WEB DESIGN</span><h3>Anime Page</h3><p>An anime-themed webpage project with a custom visual style.</p><a class="project-link" href="images/project-anime.jpg" target="_blank">View image ↗</a></div></article>
+          <article class="project-card"><a class="project-image" href="images/project-teachers-day.jpg" target="_blank" aria-label="View Teacher's Day project image"><img src="images/project-teachers-day.jpg" alt="Teacher's Day HTML project screenshot" loading="lazy"></a><div class="project-body"><span class="project-type">HTML</span><h3>Teacher's Day</h3><p>A school activity page made while practicing HTML.</p><a class="project-link" href="images/project-teachers-day.jpg" target="_blank">View image ↗</a></div></article>
+          <article class="project-card"><a class="project-image" href="images/project-animation.jpg" target="_blank" aria-label="View animation project image"><img src="images/project-animation.jpg" alt="CSS hover animation cards screenshot" loading="lazy"></a><div class="project-body"><span class="project-type">CSS ANIMATION</span><h3>Animation via Hover</h3><p>Colorful cards demonstrating hover and autoplay animation concepts.</p><a class="project-link" href="images/project-animation.jpg" target="_blank">View image ↗</a></div></article>
+          <article class="project-card"><a class="project-image" href="images/project-first-webpage.jpg" target="_blank" aria-label="View first webpage image"><img src="images/project-first-webpage.jpg" alt="First webpage project preview" loading="lazy"></a><div class="project-body"><span class="project-type">HTML &amp; CSS</span><h3>My First Webpage</h3><p>A simple personal introduction page with an image and button.</p><a class="project-link" href="images/project-first-webpage.jpg" target="_blank">View image ↗</a></div></article>
+          <article class="project-card"><a class="project-image" href="images/project-media.jpg" target="_blank" aria-label="View audio and video project image"><img src="images/project-media.jpg" alt="Audio and video webpage screenshot" loading="lazy"></a><div class="project-body"><span class="project-type">HTML MEDIA</span><h3>Audio &amp; Video Page</h3><p>A page layout featuring audio and video elements.</p><a class="project-link" href="images/project-media.jpg" target="_blank">View image ↗</a></div></article>
+          <article class="project-card"><a class="project-image" href="images/project-student-cards.jpg" target="_blank" aria-label="View student cards project image"><img src="images/project-student-cards.jpg" alt="Student information cards screenshot" loading="lazy"></a><div class="project-body"><span class="project-type">CSS CARDS</span><h3>Student Information Cards</h3><p>Colored information cards designed with HTML and CSS.</p><a class="project-link" href="images/project-student-cards.jpg" target="_blank">View image ↗</a></div></article>
+        </div>
+        <p class="note">These six images are shown as project previews. Replace or update them if your teacher requires links to the actual activity files.</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container"><div class="section-heading"><p class="eyebrow">LET'S CONNECT</p><h2>Contact <span>Me</span></h2><p>Thank you for visiting my portfolio.</p></div>
+        <div class="contact-grid"><div class="contact-card"><span class="contact-icon">✉</span><div><h3>Email Address</h3><p>Sto nino 80G Commonwealth Quezon City</p></div></div><div class="contact-card"><span class="contact-icon">☎</span><div><h3>Phone Number</h3><p>09987264782</p></div></div></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><p>© <span id="year"></span> Marlee Manila. All rights reserved.</p><a href="#top">Back to top ↑</a></div></footer>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+</body>
+</html>
